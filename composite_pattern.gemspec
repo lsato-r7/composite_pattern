@@ -6,7 +6,7 @@ require 'composite_pattern/version'
 Gem::Specification.new do |spec|
   spec.name          = "composite_pattern"
   spec.version       = CompositePattern::VERSION
-  spec.authors       = ["TODO: Write your name"]
+  spec.authors       = ["essgee"]
   spec.email         = ["sonny_gonzalez@rapid7.com"]
 
   spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
