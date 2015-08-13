@@ -1,0 +1,3 @@
+class CompositePattern::Field
+
+end
