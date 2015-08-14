@@ -1,0 +1,35 @@
+require 'spec_helper'
+
+RSpec.describe CompositePattern::LeafField do
+  describe '#n_bits' do
+    context 'when n_bits is NOT specified for .new' do
+      it 'n_bits is set to nil' do
+        leaf_field = CompositePattern::LeafField.new
+        expect(leaf_field.n_bits).to be_nil
+      end
+    end
+
+    context 'when n_bits is specified for .new' do
+      it 'n_bits is set to nil' do
+        leaf_field = CompositePattern::LeafField.new(n_bits: 64)
+        expect(leaf_field.n_bits).to eql 64
+      end
+    end
+  end
+
+  describe '#value' do
+    context 'when value is NOT specified for .new' do
+      it 'value is set to nil' do
+        leaf_field = CompositePattern::LeafField.new
+        expect(leaf_field.value).to be_nil
+      end
+    end
+
+    context 'when n_bits is specified for .new' do
+      it 'n_bits is set to nil' do
+        leaf_field = CompositePattern::LeafField.new(value: 'foo')
+        expect(leaf_field.value).to eql 'foo'
+      end
+    end
+  end
+end

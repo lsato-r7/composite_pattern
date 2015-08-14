@@ -4,4 +4,7 @@ class CompositePattern::Field
   def initialize(n_bits: nil)
     @n_bits = n_bits
   end
+
+  def build
+  end
 end
