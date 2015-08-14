@@ -12,7 +12,7 @@ class CompositePattern::CompositeField < CompositePattern::Field
 
   def build
     string = ''
-    @sub_fields.each { |f| string += f.build }
+    sub_fields.each { |sf| string += sf.build }
     string
   end
 end

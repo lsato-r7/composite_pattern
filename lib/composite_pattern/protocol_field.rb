@@ -1,4 +1,4 @@
-class CompositePattern::LeafField < CompositePattern::Field
+class CompositePattern::ProtocolField < CompositePattern::Field
   attr_reader :field_name
   attr_reader :value
   attr_reader :packet_factory
