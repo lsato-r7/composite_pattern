@@ -29,7 +29,8 @@ RSpec.describe CompositePattern::Field do
     it 'raises an error if #build is called on Field' do
       field = CompositePattern::Field.new
       expect{field.build}.to \
-        raise_error StandardError, 'Method build not implemented for abstract class'
+        raise_error StandardError,
+                    'Method build not implemented for abstract class'
     end
   end
 end
