@@ -11,8 +11,8 @@ class CompositePattern::CompositeField < CompositePattern::Field
   end
 
   def build
-    string = ''
+    binary_string = ''
     sub_fields.each { |sf| string += sf.build }
-    string
+    binary_string
   end
 end
