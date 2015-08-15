@@ -6,6 +6,7 @@ class CompositePattern::Field
   end
 
   def build
-    raise StandardError, 'Method build not implemented for abstract class'
+    raise StandardError,
+          'Method build not implemented for abstract class'
   end
 end
