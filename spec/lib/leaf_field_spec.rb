@@ -18,10 +18,18 @@ RSpec.describe LeafField do
     end
   end
 
+  describe '#build' do
+    it 'builds a binary string' do
+      structure_factory = StructureFactory.for field_type: :bit32, field_name: 'foo'
+      field = LeafField.new n_bits: 32, value: "\xFFSMB"
+      ap field.build
+      ap "\xFFSMB"
+    end
+  end
+
   describe '#structure_factory' do
     it 'TODO: do we need to check anything here?'
   end
 
 end
-
 end
